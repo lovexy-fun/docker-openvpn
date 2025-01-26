@@ -26,7 +26,7 @@ remove_dir "openvpn-$version"
 tar -xzf "$file"
 
 # 构建镜像
-docker build ./ -f compile-Dockerfile -t "lovexy-fun/openvpn:$version"
+docker build ./ -f compile-Dockerfile -t "lovexyfun/openvpn:$version"
 
 # 创建target目录
 remove_dir "./target"
@@ -35,4 +35,4 @@ mkdir "./target"
 # 编译
 docker run -v "./target:/openvpn-init/target" \
            -v "./openvpn-$version:/openvpn-init/openvpn-src" \
-           -it --rm "lovexy-fun/openvpn:$version" /bin/bash /openvpn-init/script/compile.sh
+           -it --rm "lovexyfun/openvpn:$version" /bin/bash /openvpn-init/script/compile.sh

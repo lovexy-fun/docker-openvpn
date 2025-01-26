@@ -15,17 +15,17 @@
 1. 拉取镜像
 
 ```bash
-docker pull lovexy-fun/openvpn:2:6:13
+docker pull lovexyfun/openvpn:2:6:13
 ```
 
 2. 初始化
 
 ```bash
-docker run --rm -v ./openvpn-config:/etc/openvpn -it lovexy-fun/openvpn:2.6.13 /bin/bash /openvpn-init/script/init.sh
+docker run --rm -v ./openvpn-config:/etc/openvpn -it lovexyfun/openvpn:2.6.13 /bin/bash /openvpn-init/script/init.sh
 ```
 
 3. 启动
 
 ```bash
-docker run -v ./openvpn-config:/etc/openvpn -v ./openvpn-log:/var/log/openvpn --cap-add=NET_ADMIN --device=/dev/net/tun lovexy-fun/openvpn:2.6.13
+docker run -v ./openvpn-config:/etc/openvpn -v ./openvpn-log:/var/log/openvpn --cap-add=NET_ADMIN --device=/dev/net/tun lovexyfun/openvpn:2.6.13
 ```
