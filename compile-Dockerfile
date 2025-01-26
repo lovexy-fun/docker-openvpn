@@ -1,0 +1,7 @@
+FROM ubuntu:24.04
+
+LABEL maintainer="ll<lovexyfun@gmail.com>"
+
+COPY ./script/compile.sh /openvpn-init/script/compile.sh
+
+RUN chmod +x /openvpn-init/script/compile.sh
