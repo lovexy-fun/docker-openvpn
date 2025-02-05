@@ -17,6 +17,7 @@ RUN apt update && apt install -y \
     liblz4-1 \
     liblzo2-2 \
     libpam0g \
+    iptables \
     easy-rsa \
     && apt clean
     
