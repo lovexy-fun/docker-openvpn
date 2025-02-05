@@ -1,4 +1,5 @@
 cp /openvpn-init/openvpn.conf /etc/openvpn
+cp /openvpn-init/client-sample.ovpn /etc/openvpn
 
 cd /usr/share/easy-rsa
 ./easyrsa init-pki
