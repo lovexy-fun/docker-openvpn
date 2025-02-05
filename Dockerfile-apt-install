@@ -11,7 +11,7 @@ RUN chmod +x /openvpn-init/script/init.sh
 
 RUN apt update && apt install -y \
     libnl-genl-3-200 \
-    libcap-ng-dev \
+    libcap-ng0 \
     libssl3t64 \
     liblz4-1 \
     liblzo2-2 \
