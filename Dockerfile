@@ -7,9 +7,11 @@ RUN mkdir /etc/openvpn
 COPY ./script/init.sh /openvpn-init/script/init.sh
 COPY ./config/openvpn.conf /openvpn-init/
 COPY ./config/client-sample.ovpn /openvpn-init/
+COPY ./config/verify.sh /openvpn-init/
 COPY ./target/ /usr/
 
 RUN chmod +x /openvpn-init/script/init.sh
+RUN chmod +x /openvpn-init/verify.sh
 
 RUN apt update && apt install -y \
     libnl-genl-3-200 \

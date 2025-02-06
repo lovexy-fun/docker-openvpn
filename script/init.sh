@@ -1,5 +1,9 @@
 cp /openvpn-init/openvpn.conf /etc/openvpn
 cp /openvpn-init/client-sample.ovpn /etc/openvpn
+cp /openvpn-init/verify.sh /etc/openvpn
+
+echo "user1 pass1" > /etc/openvpn/users.txt
+chmod 600 /etc/openvpn/users.txt
 
 cd /usr/share/easy-rsa
 ./easyrsa init-pki
